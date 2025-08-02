@@ -1,0 +1,13 @@
+
+
+
+.hero_landing{
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255))
+
+}
