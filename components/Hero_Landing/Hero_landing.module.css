@@ -102,18 +102,20 @@
   
   .animation_banner_track {
     display: flex;
-    gap: clamp(1rem, 3vw, 3rem);
+    gap: 3rem;
     animation: scroll-left 20s linear infinite;
-    width: fit-content;
+    width: max-content;
   }
-  
   @keyframes scroll-left {
     0% {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-51.5%);
     }
+  }
+  .animation_banner_track:hover {
+    animation-play-state: paused;
   }
   
   .animation_banner_image {
