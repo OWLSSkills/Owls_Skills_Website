@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
 }
-
+/* Position */
 .scale-down-7{
   transform: scale(0.7);
 }
@@ -16,6 +16,19 @@
 }
 
 
+
+.justify_self_center {
+  justify-self: center;
+}
+
+/* COLORS */
+.white_text {
+  color: white;
+}
+.light_green_for_text{
+  color: #D2DE9C
+}
+/* Button Stuff */
 .button_image {
   max-height: clamp(40px, 6vh, 60px); /* scales down smoothly */
   height: auto;
@@ -23,10 +36,4 @@
   object-fit: contain;
   flex-shrink: 1;
 
-}
-.justify_self_center {
-  justify-self: center;
-}
-.white_text {
-  color: white;
 }

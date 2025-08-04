@@ -2,11 +2,13 @@
     height: 100svh;
     background: linear-gradient(180deg, #fff, #fff); 
     background-color: red;
+    overflow: hidden;
   }
   
   
   .hero_landing_topagraphic_background {
     width: 100%;
+    height: 55svh;
   }
   
 .hero_landing_images_container {
@@ -72,24 +74,62 @@
 }
 .meet_your_instructor_section{
     justify-content: center;
-    height: 30svh;
+    height: 35svh;
 }
 
 .as_seen_animation_banner{
-    background-color: green;
+    background-color: #276C4C;
     width: 100%;
-    height: 100px;
+    height: 17svh;
+    
 }
 
-.animation_banner_images_container {
+
+  
+  .animation_banner_wrapper {
+    overflow: hidden;
+    width: 100%;
+    background: #276C4C; /* or transparent/gradient/etc */
+    padding: 1rem 0;
+    gap: clamp(0.5rem, 2vw, 2rem);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
-.annimation_banner_image{
-    width: 10%;
-    height: 10%;
+    padding: 1rem 2vw;
+    align-items: center;
+    justify-items: center;
+
+  }
+  
+  .animation_banner_track {
+    display: flex;
+    gap: clamp(1rem, 3vw, 3rem);
+    animation: scroll-left 20s linear infinite;
+    width: fit-content;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animation_banner_image {
+    max-height: clamp(40px, 6vw, 80px);
+    width: auto;
+    height: auto;
     object-fit: contain;
-}
+    flex-shrink: 0;
+  }
+  
+  .scale_up_logo {
+    max-height: clamp(60px, 8vw, 100px);
+  }
+  
+
+
 
 
 
