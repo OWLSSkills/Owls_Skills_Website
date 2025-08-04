@@ -1,46 +1,96 @@
 .hero_landing {
-    min-height: 100svh;
-    background: linear-gradient(180deg, #fff, #fff); /* placeholder */
+    height: 100svh;
+    background: linear-gradient(180deg, #fff, #fff); 
+    background-color: red;
   }
   
-  /* Topographic “band” area */
+  
   .hero_landing_topagraphic_background {
     width: 100%;
   }
-  /* --- Container --- */
+  
 .hero_landing_images_container {
-    --hero-h: clamp(220px, 33svh, 520px); /* shared target height */
-    padding: 10svh 5vw 0 10vw;            /* top/right/bottom/left */
+    --hero-h: clamp(220px, 33svh, 520px); 
+    padding: 10svh 5vw 0 10vw;            
     display: grid;
-    grid-template-columns: 33fr 67fr;     /* ~33% / ~67% */
+    grid-template-columns: 33fr 67fr;     
     align-items: start;
     gap: clamp(12px, 2vw, 32px);
     margin-top: -7svh;
-  }
+}
   
-  /* Left image scales with the same height as the right */
-  .OWLS_banner {
+  
+.OWLS_banner {
     height: var(--hero-h);
     width: 100%;
     object-fit: contain;
     display: block;
-  }
+}
   
-  /* Right column wrapper (kept a bit higher) */
-  .pictures_first_banner_wrapper {
-    margin-top: calc(var(--hero-h) * -.08); /* lift the group ~8% of its height */
+
+.pictures_first_banner_wrapper {
+    margin-top: calc(var(--hero-h) * -.08); 
     display: flex;
     align-items: flex-start;
     gap: clamp(8px, 1.5vw, 24px);
-    padding-right: 3vw; /* right margin so it doesn’t touch the edge */
-  }
+    padding-right: 3vw; 
+}
   
-  /* Each right-side image uses the SAME height */
-  .pictures_first_banner {
+
+.pictures_first_banner {
     height: var(--hero-h);
-    width: 100%;             /* keep aspect ratio */
+    width: 100%;             
     object-fit: contain;
     display: block;
-  }
+    gap: 0px;
+}
 
   
+.hero_landing_buttons_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.5rem, 2vw, 2rem);
+    margin-top: clamp(2rem, 4vh, 4rem);
+    flex-wrap: nowrap; 
+}
+
+
+@media (max-width: 500px) {
+    .hero_landing_buttons_container {
+      flex-wrap: wrap;
+    }
+}
+
+
+.meet_instructor_image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+
+}
+.meet_your_instructor_section{
+    justify-content: center;
+    height: 30svh;
+}
+
+.as_seen_animation_banner{
+    background-color: green;
+    width: 100%;
+    height: 100px;
+}
+
+.animation_banner_images_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.annimation_banner_image{
+    width: 10%;
+    height: 10%;
+    object-fit: contain;
+}
+
+
+
+

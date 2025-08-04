@@ -5,3 +5,28 @@
   margin: 0;
 }
 
+.scale-down-7{
+  transform: scale(0.7);
+}
+.float_right {
+  float: right;
+}
+.float_left {
+  float: left;
+}
+
+
+.button_image {
+  max-height: clamp(40px, 6vh, 60px); /* scales down smoothly */
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 1;
+
+}
+.justify_self_center {
+  justify-self: center;
+}
+.white_text {
+  color: white;
+}
