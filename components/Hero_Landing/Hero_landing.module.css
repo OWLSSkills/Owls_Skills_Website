@@ -7,8 +7,29 @@
   
   
   .hero_landing_topagraphic_background {
+    position: relative; /* Required to contain the ::before */
     width: 100%;
     height: 55svh;
+    background-image:
+        linear-gradient(rgba(255, 0, 255, 0.5), rgb(255 255 0 / 0.5)),
+        /* linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), */
+        url('/Topo_Map.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0; /* base layer */
+
+  }
+  
+  .hero_landing_topagraphic_background::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 243, 243, 0.2); /* transparent white */
+    z-index: -1; /* make it sit *under* the content inside */
+    pointer-events: none;
   }
   
 .hero_landing_images_container {
@@ -81,7 +102,6 @@
     background-color: #276C4C;
     width: 100%;
     height: 17svh;
-    
 }
 
 
@@ -94,7 +114,7 @@
     gap: clamp(0.5rem, 2vw, 2rem);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 1rem 2vw;
+    padding: 1rem 12vw;
     align-items: center;
     justify-items: center;
 
@@ -103,7 +123,7 @@
   .animation_banner_track {
     display: flex;
     gap: 3rem;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 10s linear infinite;
     width: max-content;
   }
   @keyframes scroll-left {
@@ -111,7 +131,7 @@
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-51.5%);
+      transform: translateX(-51%);
     }
   }
   .animation_banner_track:hover {
@@ -127,7 +147,8 @@
   }
   
   .scale_up_logo {
-    max-height: clamp(60px, 8vw, 100px);
+    max-height: clamp(120px, 16vw, 200px);
+    margin-top: -3rem;
   }
   
 

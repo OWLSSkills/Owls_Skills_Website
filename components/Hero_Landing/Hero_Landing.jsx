@@ -21,16 +21,12 @@ export default function HeroLanding() {
                     </div>
                 </div>
                 <div className={styles.hero_landing_buttons_container}>
-                    <img
-                        src="/Button1.a.png"
-                        alt="Book your course button"
-                        className={`button_image`}
-                    />
-                    <img 
-                        src="/Button1.b.png"
-                        alt="subscribe to our newsletter button"
-                        className={`button_image`}
-                    />
+                    <button className={`background_color_light_purple font_color_white call_to_action_button`}>
+                        BOOK YOUR COURSE
+                    </button>
+                    <button className={`background_color_light_green font_color_white call_to_action_button`}>
+                        SUBSCRIBE TO THE NEWSLETTER
+                    </button>
                 </div>
             </div>
             <div className={styles.meet_your_instructor_section}>
