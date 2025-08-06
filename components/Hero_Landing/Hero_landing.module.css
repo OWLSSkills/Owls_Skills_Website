@@ -96,63 +96,63 @@
     justify-content: center;
     height: 35svh;
 }
-
-.as_seen_animation_banner{
+/* Container section */
+.as_seen_animation_banner {
     background-color: #276C4C;
     width: 100%;
     height: 17svh;
-}
-
-
+    position: relative;
+  }
   
+  /* Main wrapper */
   .animation_banner_wrapper {
     overflow: hidden;
     width: 100%;
-    background: #276C4C; /* or transparent/gradient/etc */
-    padding: 1rem 0;
-    gap: clamp(0.5rem, 2vw, 2rem);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 1rem 12vw;
-    align-items: center;
-    justify-items: center;
-
+    padding: 1rem 2vw;
   }
   
+  /* Scrolling track */
   .animation_banner_track {
     display: flex;
-    gap: 3rem;
+    gap: clamp(6rem, 16vw, 16rem);
     animation: scroll-left 10s linear infinite;
     width: max-content;
+    align-items: center;
   }
+  
   @keyframes scroll-left {
     0% {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-65.11%);
+      transform: translateX(-54%);
     }
   }
+  
   .animation_banner_track:hover {
     animation-play-state: paused;
   }
   
-  .animation_banner_image {
-    max-height: clamp(40px, 6vw, 80px);
-    width: 14%;
-    height: auto;
-    object-fit: contain;
+  /* Force each logo into a box with the same width */
+  .logo_container {
+    width: clamp(100px, 10vw, 160px);
+    height: clamp(40px, 6vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
   }
   
-  .scale_up_logo {
-    max-height: clamp(120px, 16vw, 200px);
-    margin-top: -3rem;
+  /* All logos scale naturally inside their container */
+  .animation_banner_image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
   }
   
-
-
-
-
-
-
+  /* National Geographic logo gets visually larger */
+  .scale_up_logo {
+    transform: scale(1.6);
+  }
+  
