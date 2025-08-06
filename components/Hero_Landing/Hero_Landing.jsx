@@ -36,36 +36,36 @@ export default function HeroLanding() {
                 <h2 className='justify_self_center light_green_for_text'>As Seen, Read and Heard On</h2>
 
                 <div className={styles.animation_banner_wrapper}>
-  <div className={styles.animation_banner_track}>
-    {/* Repeat these */}
-    <div className={styles.logo_container}>
-      <img src='/Animation_Banner/masterclass-logo_white.png' alt='Masterclass Logo' className={styles.animation_banner_image} />
-    </div>
-    <div className={styles.logo_container}>
-      <img src='/Animation_Banner/alone-s9-logo-black.png' alt='Alone Logo' className={styles.animation_banner_image} />
-    </div>
-    <div className={styles.logo_container}>
-      <img src='/Animation_Banner/Backpacker.png' alt='Backpacker Logo' className={styles.animation_banner_image} />
-    </div>
-    <div className={styles.logo_container}>
-      <img src='/Animation_Banner/National_Geographic.png' alt='National Geographic Logo' className={`${styles.animation_banner_image} ${styles.scale_up_logo}`} />
-    </div>
+                    <div className={styles.animation_banner_track}>
+                        {/* Repeat these */}
+                        <div className={styles.logo_container}>
+                        <img src='/Animation_Banner/masterclass-logo_white.png' alt='Masterclass Logo' className={styles.animation_banner_image} />
+                        </div>
+                        <div className={styles.logo_container}>
+                        <img src='/Animation_Banner/alone-s9-logo-black.png' alt='Alone Logo' className={styles.animation_banner_image} />
+                        </div>
+                        <div className={styles.logo_container}>
+                        <img src='/Animation_Banner/Backpacker.png' alt='Backpacker Logo' className={styles.animation_banner_image} />
+                        </div>
+                        <div className={styles.logo_container}>
+                        <img src='/Animation_Banner/National_Geographic.png' alt='National Geographic Logo' className={`${styles.animation_banner_image} ${styles.scale_up_logo}`} />
+                        </div>
 
-    {/* Repeat set again for smooth looping */}
-    <div className={styles.logo_container}>
-      <img src='/Animation_Banner/masterclass-logo_white.png' alt='Masterclass Logo' className={styles.animation_banner_image} />
-    </div>
-    <div className={styles.logo_container}>
-      <img src='/Animation_Banner/alone-s9-logo-black.png' alt='Alone Logo' className={styles.animation_banner_image} />
-    </div>
-    <div className={styles.logo_container}>
-      <img src='/Animation_Banner/Backpacker.png' alt='Backpacker Logo' className={styles.animation_banner_image} />
-    </div>
-    <div className={styles.logo_container}>
-      <img src='/Animation_Banner/National_Geographic.png' alt='National Geographic Logo' className={`${styles.animation_banner_image} ${styles.scale_up_logo}`} />
-    </div>
-  </div>
-</div>
+                        {/* Repeat set again for smooth looping */}
+                        <div className={styles.logo_container}>
+                        <img src='/Animation_Banner/masterclass-logo_white.png' alt='Masterclass Logo' className={styles.animation_banner_image} />
+                        </div>
+                        <div className={styles.logo_container}>
+                        <img src='/Animation_Banner/alone-s9-logo-black.png' alt='Alone Logo' className={styles.animation_banner_image} />
+                        </div>
+                        <div className={styles.logo_container}>
+                        <img src='/Animation_Banner/Backpacker.png' alt='Backpacker Logo' className={styles.animation_banner_image} />
+                        </div>
+                        <div className={styles.logo_container}>
+                        <img src='/Animation_Banner/National_Geographic.png' alt='National Geographic Logo' className={`${styles.animation_banner_image} ${styles.scale_up_logo}`} />
+                        </div>
+                    </div>
+                    </div>
 
             </div>
 
