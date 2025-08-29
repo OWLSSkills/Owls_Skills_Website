@@ -1,0 +1,40 @@
+
+.section{
+    height:120svh;
+}
+
+.first_sub_section{
+    height: 40svh;
+    background-color: rgba(216, 210, 229, 1);
+    display: flex;
+
+}
+.description_and_faq_image{
+    margin-left: 5svw;
+    scale: 1.1;
+}
+.description_text{
+    margin-left: 5svw;
+    font-size: clamp(16px, 2vw, 24px);
+    color: #122932;
+    text-align: left;
+}
+.subTitle{
+    width: 50%;
+}
+.paragraph{
+    width: 60%;
+    margin-top: 3svh;
+    font-size: 3svh;
+}
+.button_container{
+    margin-top: 5svh;
+    display: flex;
+    flex-direction: row;
+    gap: clamp(8px, 1.5vw, 24px);
+}   
+
+.second_sub_section{
+    height: 70svh;
+}
+
