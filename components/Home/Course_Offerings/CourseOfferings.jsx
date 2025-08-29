@@ -10,7 +10,7 @@ export default function CourseOfferings(){
                 <img src='/images/bubble_board_3.png' alt='Course Offerings Banner' className={styles.course_offerings_image}/>
             </div>
             <div className={styles.second_sub_section}>
-                <img src='/images/custom_private.png' alt='Course Offerings Banner' className={styles.course_offerings_banner_image}/>
+                <img src='/images/custom_private.png' alt='Course Offerings Banner' className={`${styles.course_offerings_image} mt-8 `}/>
             </div>
         </div>
     )
