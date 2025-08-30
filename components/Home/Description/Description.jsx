@@ -4,7 +4,7 @@ export default function Description() {
 
     return (
             <div className={styles.first_sub_section}>
-                <img src='/images/IMG_1720.jpg' alt='Description and FAQ Banner' className={styles.description_and_faq_image}/>
+                <img src='/images/IMG_1720.jpg' alt='Description Banner' className={styles.description_and_faq_image}/>
                 <div className={styles.description_text}>
                     <h2 className={styles.subTitle}>OUTDOOR SKILLS FOR WOMEN BY WOMEN</h2>
                     <p className={styles.paragraph}>To educate and empower women and other under represented demographics in the skills of surviving emergency situations in global wilderness envrionments</p>
