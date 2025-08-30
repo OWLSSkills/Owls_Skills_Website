@@ -1,0 +1,85 @@
+
+
+
+.section{
+    height:40svh;
+    width: 100svw;
+    background-color: rgb(216, 210, 229);
+}
+
+
+
+
+  
+  .container{
+    width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .title{
+    margin: 0 0 clamp(16px, 3vw, 28px);
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(18px, 2.4vw, 28px);
+    color: #122932;
+  }
+  
+  /* Responsive two-up that collapses gracefully */
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  
+  /* Card */
+  .card{
+    background: #fff;
+    border-radius: 16px;
+    padding: clamp(14px, 2.4vw, 20px);
+    box-shadow: 0 6px 24px rgba(18,41,50,0.12);
+    display: grid;
+    width: 20svw;
+    height: 36svh;
+    /* gap: 10px; */
+    margin-top: 2svh;
+  }
+  
+  /* Header: avatar + name */
+  .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: #e9eef2;
+    color: #122932;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+  }
+  
+  .name{
+    font-weight: 700;
+    color: #122932;
+    font-size: clamp(14px, 1.8vw, 16px);
+  }
+  
+  /* Quote text */
+  .quote{
+    margin: 0;
+    color: #122932;
+  }
+  .quote p{
+    margin: 0;
+    line-height: 1.6;
+    font-size: clamp(14px, 1.9vw, 16px);
+  }
+  
+  /* Optional: tighten layout on very small screens */
+  @media (max-width: 380px){
+    .avatar{ width: 32px; height: 32px; }
+  }
+  
