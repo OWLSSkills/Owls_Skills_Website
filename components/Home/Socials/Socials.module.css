@@ -1,0 +1,23 @@
+
+
+
+
+
+
+.section{
+    width: 100svw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+.social_icon{
+    width: 20svw;
+}
+.size_correction_for_facebook{
+    scale: 1.1;
+    transform: translate(0,-1svw);
+}
