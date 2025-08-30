@@ -16,6 +16,7 @@
 
 .social_icon{
     width: 20svw;
+    cursor: pointer;
 }
 .size_correction_for_facebook{
     scale: 1.1;

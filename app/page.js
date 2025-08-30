@@ -4,6 +4,7 @@ import CourseOfferings from "@/components/Home/Course_Offerings/CourseOfferings"
 import Description from "@/components/Home/Description/Description";
 import NewsLetter from "@/components/Home/NewsLetter/NewsLetter";
 import SocialIcons from "@/components/Home/Socials/Socials";
+import Faq from "@/components/Home/FAQ/Faq";
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -12,6 +13,7 @@ export default function Home() {
       <Description />
       <NewsLetter />
       <SocialIcons />
+      <Faq />
     </div>
   );
 }

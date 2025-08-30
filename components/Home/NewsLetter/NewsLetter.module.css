@@ -33,6 +33,7 @@
     font-size: clamp(16px, 2vw, 20px);
     text-align: center;
     cursor: text;
+    background-color: rgb(237,238,243);
   }
   
   .submit_button{
