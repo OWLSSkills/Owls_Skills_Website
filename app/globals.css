@@ -38,6 +38,11 @@
 
 }
 
+.root{
+  --green-50:  rgb(245,249,246);
+
+}
+
 .background_color_light_purple {
   background-color: #7A5EA4; 
 }
