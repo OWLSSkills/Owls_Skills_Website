@@ -79,3 +79,23 @@
 .mt-2{
   margin-top: 2svh;
 }
+.mt-5{
+  margin-top: 5svh;
+}
+
+
+
+
+.sr-only {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+.input, .textarea{
+  width: 100%; border:none; border-radius: var(--radius);
+  background: var(--lavender-200); color:#111; font-weight:700;
+  padding: .9rem 1.2rem; outline:none;
+  font-size: clamp(.8rem, 1.6vw, 1.5rem);
+}
+.input::placeholder, .textarea::placeholder{ color:#111; font-weight:700; }
+.input:focus, .textarea:focus{ box-shadow:0 0 0 3px rgba(114,85,140,.25); }

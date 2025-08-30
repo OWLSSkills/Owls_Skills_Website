@@ -6,6 +6,7 @@ import NewsLetter from "@/components/Home/NewsLetter/NewsLetter";
 import SocialIcons from "@/components/Home/Socials/Socials";
 import Faq from "@/components/Home/FAQ/Faq";
 import Testimonials from "@/components/Home/Testimonials/Testimonials";
+import ContactForm from "@/components/Home/ContactForm/ContactForm";
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -16,6 +17,7 @@ export default function Home() {
       <SocialIcons />
       <Faq />
       <Testimonials />
+      <ContactForm />
     </div>
   );
 }
