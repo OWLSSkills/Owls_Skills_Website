@@ -7,12 +7,8 @@
     background-color: rgb(216, 210, 229);
 }
 
-
-
-
   
   .container{
-    width: 1100px;
     margin: 0 auto;
   }
   
@@ -37,10 +33,10 @@
     padding: clamp(14px, 2.4vw, 20px);
     box-shadow: 0 6px 24px rgba(18,41,50,0.12);
     display: grid;
-    width: 20svw;
+    width: 18svw;
     height: 36svh;
-    /* gap: 10px; */
     margin-top: 2svh;
+    margin-left: 2svh;
   }
   
   /* Header: avatar + name */

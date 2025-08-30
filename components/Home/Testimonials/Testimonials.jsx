@@ -17,6 +17,20 @@ const TESTIMONIALS = [
        was really great, and I’m happy to have that knowledge now.`,
     initial: "J",
   },
+  {
+    name: "James",
+    text:
+      `Night-time navigation was really interesting… The extended map and compass work
+       was really great, and I’m happy to have that knowledge now.`,
+    initial: "J",
+  },
+  {
+    name: "James",
+    text:
+      `Night-time navigation was really interesting… The extended map and compass work
+       was really great, and I’m happy to have that knowledge now.`,
+    initial: "J",
+  },
 ];
 
 export default function Testimonials() {
