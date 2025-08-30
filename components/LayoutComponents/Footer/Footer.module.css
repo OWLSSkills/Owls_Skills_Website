@@ -1,3 +1,63 @@
-.footer{ margin-top:4svh; background: rgb(245,249,246); width: 100vw; }
-.footerStack{ display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1rem; }
-.smallLogo { width:120px; height:auto; }
+.footer{
+    margin-top: 4svh;
+    background: rgb(245,249,246);
+    width: 100vw;
+    position: relative;              /* anchor for the absolute dock */
+    min-height: 100px;               /* tweak if icons clip */
+  }
+  
+  .footerStack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;                  /* center the stack in the viewport */
+    width: max-content;
+  }
+  
+  .smallLogo { width: 120px; height: auto; }
+  
+  /* Right-docked container, vertically centered */
+  .socialsDock{
+    position: absolute;
+    right: clamp(12px, 3vw, 28px);
+    top: 50%;
+    transform: translateY(-50%) scale(.3);  /* keep your scale */
+    transform-origin: right center;
+    z-index: 1;
+  }
+  
+  /* PHONE FIX: stack then center socials underneath */
+  @media (max-width: 600px){
+    .footer{
+      /* optional but nice: keeps things comfy near iOS home bar */
+      padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+      display: grid;
+      justify-items: center;
+    }
+  
+    .socialsDock{
+      position: static;              /* leave normal flow */
+      transform: scale(.3);          /* keep the shrink */
+      transform-origin: center;      /* center the scaled visuals */
+      margin-top: .5rem;             /* little breathing room under the text */
+    }
+  }
+  
+  /* your required scale */
+  .shrink_socials{
+    transform-origin: right center;
+  }
+  
+  /* Mobile: drop below and center */
+  @media (max-width: 560px){
+    .socialsDock{
+      position: static;
+      translate: 0 -140%;
+      margin: .5rem auto 1rem;
+    }
+  }
+
+  
