@@ -1,6 +1,22 @@
+'use client';
+
 import styles from './Hero_landing.module.css';
+import { useRouter, usePathname } from "next/navigation";
 
 export default function HeroLanding() {
+
+    function navigateToNewsletter() {
+        const id = "newsletter";
+        const el = typeof window !== "undefined" ? document.getElementById(id) : null;
+        const pathname = typeof window !== "undefined" ? window.location.pathname : "/";
+      
+        if (pathname === "/" && el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+          const router = require("next/navigation").useRouter?.() ?? null; 
+          (router ? router.push : (href => (window.location.href = href)))(`/#${id}`);
+        }
+      }
 
     return (
         <div className={styles.hero_landing}>
@@ -24,7 +40,7 @@ export default function HeroLanding() {
                     <button className={`background_color_light_purple font_color_white call_to_action_button`}>
                         BOOK YOUR COURSE
                     </button>
-                    <button className={`background_color_light_green font_color_white call_to_action_button`}>
+                    <button className={`background_color_light_green font_color_white call_to_action_button`} onClick={navigateToNewsletter}>
                         SUBSCRIBE TO THE NEWSLETTER
                     </button>
                 </div>
