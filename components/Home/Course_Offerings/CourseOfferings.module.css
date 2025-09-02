@@ -55,3 +55,52 @@
     .first_sub_section{ grid-template-columns: 1fr; }
   }
   
+
+
+  /* Wrapper becomes the positioning context */
+.boardWrap{
+    position: relative;
+    display: inline-block;           /* shrink-wrap to the image */
+  }
+  
+  /* Your existing image class is fine; just ensure it's block-level */
+  .course_offerings_image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Absolutely positioned, sized by percentages so it scales with the image */
+  .overlayBtn{
+    position: absolute;
+    left: var(--btn-left, 10%);
+    top:  var(--btn-top,  66%);
+    width: var(--btn-width, 28%);
+    z-index: 2;
+    /* optional: line the visual up more precisely */
+    transform-origin: left top;
+  }
+  
+  /* If you want the clickable area to match a slightly rotated or offset design,
+     nudge here (keep it subtle, like 1-2deg or a few px):
+     .overlayBtn { transform: rotate(-1deg); }
+  */
+  
+  /* Phone tweak (if the artwork has a different crop on small screens) */
+  @media (max-width: 600px){
+    .boardWrap{
+      --btn-left: 10.5%;
+      --btn-top:  66.5%;
+      --btn-width: 55%;   /* make it larger on small screens if needed */
+    }
+  }
+  
+
+  .overlayBtn,
+.overlayBtn:link,
+.overlayBtn:visited,
+.overlayBtn:hover,
+.overlayBtn:active {
+  text-decoration: none;
+}
+

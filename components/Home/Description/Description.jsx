@@ -1,4 +1,5 @@
 import styles from './Description.module.css';
+import Link from 'next/link';
 
 export default function Description() {
 
@@ -10,12 +11,14 @@ export default function Description() {
                     <p className={styles.paragraph}>To educate and empower women and other under represented demographics in the skills of surviving emergency situations in global wilderness envrionments</p>
 
                     <div className={styles.button_container}>
-                        <button className={`background_color_light_green font_color_white call_to_action_button`}>
+                        <Link href={'./mission'} className={`background_color_light_green font_color_white call_to_action_button btnLink`}>
                             LEARN MORE
-                        </button>
-                        <button className={`background_color_light_green font_color_white call_to_action_button`}>
-                            COURSES
-                        </button>
+                        </Link>
+                        <a className='btnLink' href='https://www.google.com/'>
+                            <button className={`background_color_light_green font_color_white call_to_action_button`}>
+                                COURSES
+                            </button>
+                        </a>
                     </div>
 
                 </div>
