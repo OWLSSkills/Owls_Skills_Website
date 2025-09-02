@@ -41,7 +41,7 @@ export default function CourseOfferings(){
                 <figure className={styles.boardWrap} style={{
                     // tweak these three numbers to line it up perfectly
                     // (percentages are relative to the image's width/height)
-                    '--btn-left': '35%',   // x from the left edge
+                    '--btn-left': '30%',   // x from the left edge
                     '--btn-top':  '75.0%',  // y from the top edge
                     '--btn-width':'28%',    // width of the button area
                     }}>
