@@ -15,7 +15,6 @@ export default function ContactForm() {
       alert("Please fill out all fields.");
       return;
     }
-    // submit…
   }
 
   return (
@@ -34,10 +33,7 @@ export default function ContactForm() {
         <label className={styles.srOnly} htmlFor="message">Message</label>
         <textarea id="message" name="message" placeholder="Message" className={styles.textarea} rows={6} />
 
-        <button type="submit" className="background_color_light_green font_color_white call_to_action_button justify_self_center {
-  justify-self: center;
-}
-">
+        <button type="submit" className="background_color_light_green font_color_white call_to_action_button">
           CONTACT JESSIE
         </button>
       </form>
