@@ -104,3 +104,52 @@
 }
 .input::placeholder, .textarea::placeholder{ color:#111; font-weight:700; }
 .input:focus, .textarea:focus{ box-shadow:0 0 0 3px rgba(114,85,140,.25); }
+
+.display_none{
+  display: none;
+}
+
+
+
+.btnLink:link,
+.btnLink:visited {
+  text-decoration: none;         
+  color: #D2DE9C;                
+}
+
+
+/* Make CTA <a> behave like the button */
+a.call_to_action_button,
+a.call_to_action_button:link,
+a.call_to_action_button:visited {
+  /* sizing like your button */
+  display: inline-flex;                 /* shrink to content */
+  align-items: center;
+  justify-content: center;
+  width: auto;                          /* don't stretch full width */
+
+  /* kill underline + lock base color */
+  text-decoration: none;
+  color: #D2DE9C;                       /* same as .font_color_white */
+}
+
+/* keep your hover text color change */
+a.call_to_action_button.font_color_white:hover {
+  color: #122932;                       /* matches .font_color_white:hover */
+}
+
+/* accessible focus ring (optional) */
+a.call_to_action_button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* If you STILL see an underline due to a strong global rule, uncomment: */
+/*
+a.call_to_action_button,
+a.call_to_action_button:link,
+a.call_to_action_button:visited,
+a.call_to_action_button:hover,
+a.call_to_action_button:active,
+a.call_to_action_button:focus { text-decoration: none !important; }
+*/
