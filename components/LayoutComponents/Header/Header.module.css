@@ -1,7 +1,88 @@
-
 .header{
-    width: 100svw;
-    height: 10svh;
-    border-bottom: 1px solid #ccc;
-}
-
+    background: var(--green-50, rgb(245,249,246));
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    width: 100%;
+  }
+  
+  /* desktop/tablet bar: logo · nav · CTA */
+  .bar{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px clamp(16px, 4vw, 24px);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: clamp(12px, 3vw, 28px);
+  }
+  
+  /* brand */
+  .brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .logo{ height: clamp(42px, 9vh, 66px); width:auto; display:block; }
+  
+  /* center nav */
+  .nav{
+    justify-self: center;
+    display: flex;
+    gap: clamp(12px, 3vw, 28px);
+    align-items: center;
+    flex-wrap: wrap;               /* desktop can wrap nicely if needed */
+  }
+  
+  /* links */
+  .navLink,
+  .navLink:link,
+  .navLink:visited{
+    text-decoration: none;
+    color: #276C4C;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .03em;
+    font-size: clamp(12px, 1.2vw, 14px);
+    white-space: nowrap;           /* never break inside a link */
+  }
+  .navLink:hover{ color:#122932; }
+  .navLink:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+  
+  /* CTA container */
+  .ctaWrap{ justify-self:end; }
+  
+  /* ----------------- MOBILE ----------------- */
+  @media (max-width: 760px){
+    /* two rows: logo + CTA on row 1, nav on row 2 */
+    .bar{
+      grid-template-columns: auto 1fr;
+      grid-template-areas:
+        "brand cta"
+        "nav   nav";
+      row-gap: 8px;
+    }
+    .brand{ grid-area: brand; }
+    .ctaWrap{ grid-area: cta; justify-self: end; }
+    .nav{ 
+      grid-area: nav; 
+      justify-content: center;
+      flex-wrap: nowrap;                 /* keep in one line */
+      gap: 18px;
+      overflow-x: auto;                  /* horizontal scroll if needed */
+      -webkit-overflow-scrolling: touch; /* momentum scroll on iOS */
+      scrollbar-width: none;
+      padding: 4px 0;
+    }
+    .nav::-webkit-scrollbar{ display:none; }
+  
+    /* scale CTA down a bit ONLY inside header (doesn't affect other buttons) */
+    .ctaWrap :global(a.call_to_action_button){
+      padding: .6rem .9rem;
+      font-size: .9rem;
+      border-radius: 9999px;
+    }
+  
+    .logo{ height: 32px; }
+  }
+  
+  @media (max-width: 420px){
+    .nav{ gap: 14px; }
+    .ctaWrap :global(a.call_to_action_button){ padding: .5rem .8rem; font-size:.85rem; }
+    .logo{ height: 28px; }
+  }
+  
